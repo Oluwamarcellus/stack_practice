@@ -46,6 +46,7 @@ typedef struct instruction_s
  * @arg: opcode argument
  * @buffer: buffer written from file
  * @stack_list: linked list
+ * @fp: file pointer
  * Description: Consist of the global variables in the program
  */
 struct Global

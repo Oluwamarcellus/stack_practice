@@ -1,6 +1,6 @@
 #include "monty.h"
-#include <stdio.h>
-#include <stdlib.h>
+
+
 /**
  *main - entry point
  *@argc: argc
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 			{
 				fprintf(stderr, "L%d: unknown instruction <opcode>\n", global.line_number);
 				ffree();
-				exit (EXIT_FAILURE);
+				exit(EXIT_FAILURE);
 			}
 			global.arg = strtok(NULL, " \n\t");
 			func(&global.stack_list, global.line_number);
